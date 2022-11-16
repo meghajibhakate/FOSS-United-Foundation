@@ -1,39 +1,91 @@
 
-function myFunction() {
-    if (document.getElementById("drop").style.display == "none") {
-        document.getElementById("drop").style.display = "flex";
+/**
+ * @desc Toggle dropdown menu
+ */
+function eventsClick(){
+    var events=document.getElementById("drop-events")
+
+    if (events.style.display == "none") {
+        events.style.display = "flex";
     } else {
-        document.getElementById("drop").style.display = "none";
+        events.style.display = "none";
+    } 
+}
+
+
+/**
+ * @desc Toggle dropdown menu
+ */
+function aboutClick(){
+    var about=document.getElementById("drop-about")
+
+    if (about.style.display == "none") {
+        about.style.display = "flex";
+    } else {
+        about.style.display = "none";
+    } 
+}
+
+
+
+// Functions for Responsive Screen
+
+/**
+ * @desc Toggle hamburger menu
+ */
+function myFunction() {
+     // check drop style display is none
+     var hamburger=document.getElementById("drop")
+    if (hamburger.style.display == "none") {    //dropdown display none
+        hamburger.style.display = "flex";       //dropdown display flex 
+    }   
+    else {
+        hamburger.style.display = "none";
     }
 }
 
 
-function eventsClick(){
-    if (document.getElementById("drop-events").style.display == "none") {
-        document.getElementById("drop-events").style.display = "flex";
-    } else {
-        document.getElementById("drop-events").style.display = "none";
-    } 
-}
+// create anFunction for Responsive Screen 
+/**
+ * @desc Toggle dropdown menu
+ */
 function eventClick(){
-    if (document.getElementById("drop-newevent").style.display == "none") {
-        document.getElementById("drop-newevent").style.display = "flex";
+    var event=document.getElementById("drop-newevent")
+    if (event.style.display == "none") {
+        event.style.display = "flex";
     } else {
-        document.getElementById("drop-newevent").style.display = "none";
-    } 
-}
-function aboutClick(){
-    if (document.getElementById("drop-about").style.display == "none") {
-        document.getElementById("drop-about").style.display = "flex";
-    } else {
-        document.getElementById("drop-about").style.display = "none";
+        event.style.display = "none";
     } 
 }
 
+
+
+ /**
+ * @desc Toggle dropdown menu
+ */
 function newaboutClick(){
-    if (document.getElementById("drop-newabout").style.display == "none") {
-        document.getElementById("drop-newabout").style.display = "flex";
+    var newabout=document.getElementById("drop-newabout")
+    if (newabout.style.display == "none") {
+        newabout.style.display = "flex";
     } else {
-        document.getElementById("drop-newabout").style.display = "none";
+        newabout.style.display = "none";
     } 
 }
+
+
+
+
+
+
+
+
+
+// /**
+//  * @param {number} index - index of tasklist
+//  * description: 
+//  * @return {number} incrementing index
+//  */
+// function btnClick(index){
+//     console.log(index)
+//     return index++
+// }

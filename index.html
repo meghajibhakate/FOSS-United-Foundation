@@ -5,23 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
     <title>Document</title>
+    <!-- Css -->
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome link for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
+
 <body>
+
 
     <header>
 
-        <img class="img1" src="https://fossunited.org//files/fu.png" alt="img">
-        <div class="dropdown" id="drop" style="display: none">
+        <!-- foss united website logo image -->
 
+        <img class="img1" src="https://fossunited.org//files/fu.png" alt="img">
+
+
+        <!-- Mobile screen Navbar  section start-->
+        <div class="dropdown" id="drop" style="display: none">
             <li class="list-nav"><a href="https://mon.school" target="_blank">Mon.School</a></li>
             <li class="grants"><a id="bar" href="#">Grants</a></li>
             <li><a href="https://fossunited.org/foss-pledge">FOSS pledge</a></li>
 
             <li class="events-dropdown">
+                <!--calls an eventClick function -->
                 <a href="#" onclick="eventClick()">Events <i class="fa-solid fa-caret-down"></i></a>
                 <ul id="drop-newevent" style="display: none">
                     <li><a href="https://fossunited.org/events"></a>Events page</li>
@@ -35,6 +45,7 @@
             </li>
 
             <li class="events-dropdown">
+                <!--calls a newaboutClick function -->
                 <a href="#" onclick="newaboutClick()">About <i class="fa-solid fa-caret-down"></i></a>
                 <ul id="drop-newabout" style="display: none">
                     <li><a href="https://fossunited.org/about" target="_blank"></a>About FOSS United</li>
@@ -44,15 +55,17 @@
 
             </li>
             <li><a href="#">Login</a></li>
-
         </div>
+        <!-- Mobile screen Navbar  section end-->
 
+        
+        <!-- Desktop screen Navbar  section start -->
         <ul id="navbar">
-
             <li class="list-nav"><a id="bar" href="https://mon.school" target="_blank">Mon.School</a></li>
             <li class="grants"><a id="bar" href="#">Grants</a></li>
             <li><a id="bar" href="https://fossunited.org/foss-pledge">FOSS pledge</a></li>
             <li class="events-dropdown">
+                <!--calls a eventsClick function -->
                 <a id="bar" href="#" onclick="eventsClick()">Events <i class="fa-solid fa-caret-down"></i></a>
 
                 <ul id="drop-events" style="display: none">
@@ -69,6 +82,7 @@
             </li>
 
             <li class="events-dropdown">
+                <!--calls a aboutClick function -->
                 <a id="bar" href="#" onclick="aboutClick()">About <i class="fa-solid fa-caret-down"></i></a>
 
                 <ul id="drop-about" style="display: none">
@@ -79,16 +93,23 @@
 
             </li>
 
-
-            <li><a  href="https://fossunited.org/login#login">Login</a></li>
+            <li><a href="https://fossunited.org/login#login">Login</a></li>
         </ul>
 
-        <div onclick="myFunction()" class="logo-bar">
-            <button id="bar-button"><i class="fa-solid fa-bars"></i></button>
-        </div>
 
+         <!-- Desktop screen Navbar  section end -->
+
+        <!--calls a myFunction function -->
+        <div onclick="myFunction()" class="logo-bar">
+            <button id="bar-button"><i class="fa-solid fa-bars"></i></button> <!-- hamburger icon -->
+        </div>
     </header>
-    <!-- **************** -->
+
+
+
+    <!-- main body section start -->
+
+    <!-- ************************************************* -->
     <div class="box2">
         <div class="heading">
             <h1>Funding and grants</h1>
@@ -99,12 +120,16 @@
 
             <button class="btn"><a href="https://fossunited.org/grants/application/new">Apply for Funding</a></button>
         </div>
+        <!-- Big heart image for (desktop) Screen  -->
         <div class="head-2">
             <img class="img2" src="https://fossunited.org/files/FOSS%20grants%20hero.png" alt="heart">
         </div>
 
     </div>
-    <!-- ************** -->
+
+    <!-- ******************************************************** -->
+    <!-- information about website  section start -->
+    <!-- How it works -->
     <div class="container2">
 
         <h3 id="how-it-works">How it works</h3>
@@ -123,8 +148,6 @@
                 hackathon
                 grant</a> program.</p>
 
-
-
         <h3 id="eligibility">Eligibility</h3>
 
         <p>Any person or organization building FOSS technologies in India or using FOSS for social good can
@@ -139,11 +162,13 @@
 
 
 
-        <!-- ****** -->
+        <!-- ********************************************************************** -->
+        <!-- Recent Grants section start -->
         <div class="container3">
             <h2 id="recent-grants">Recent Grants</h2>
             <div class="recent-main-div">
 
+                <!-- Recent Grants 1 -->
                 <section class="recent-countainer1">
                     <div>
                         <h4 class="mt-0">TinkerHub Foundation</h4>
@@ -174,7 +199,8 @@
 
 
                 <hr>
-                <!-- *******2222222222222222222**** -->
+                <!-- Recent Grants 2 -->
+
                 <section class="recent-countainer1">
                     <div>
                         <h4 class="mt-0">Parseable</h4>
@@ -204,7 +230,8 @@
 
                 </section>
                 <hr>
-                <!-- *******3333333333333333********** -->
+                <!-- Recent Grants 3 -->
+
                 <section class="recent-countainer1">
                     <div>
                         <h4 class="mt-0">Sayan Nandan (developer)</h4>
@@ -229,7 +256,8 @@
 
                 </section>
                 <hr>
-                <!-- ***********444444444444444444************ -->
+                <!-- Recent Grants 4 -->
+
 
                 <section class="recent-countainer1">
                     <div>
@@ -259,7 +287,8 @@
 
                 </section>
                 <hr>
-                <!-- *********555555555555******** -->
+                <!-- Recent Grants 5 -->
+
                 <section class="recent-countainer1">
                     <div>
                         <h4 class="mt-0">Paperd.ink</h4>
@@ -287,7 +316,7 @@
 
                 </section>
                 <hr>
-                <!-- ************666666666666666666666666************* -->
+                <!-- Recent Grants 6 -->
                 <section class="recent-countainer1">
                     <div>
                         <h4 class="mt-0">Swathanthra Malayalam Computing</h4>
@@ -315,7 +344,8 @@
 
                 </section>
                 <hr>
-                <!-- ******************** -->
+                <!-- Recent Grants 7 -->
+
                 <section class="recent-countainer1">
                     <div class="col-12 col-md-8">
                         <h4 class="mt-0">TinkerHub Foundation</h4>
@@ -344,7 +374,8 @@
 
                 </section>
                 <hr>
-                <!-- ***********7777777777777****** -->
+                <!-- Recent Grants 8 -->
+
                 <section class="recent-countainer1">
                     <div>
                         <h4 class="mt-0">Sayan Nandan (developer)</h4>
@@ -370,8 +401,8 @@
                 </section>
                 <hr>
 
-                <!-- -->
-                <!-- *************8888888888888************ -->
+                <!-- Recent Grants 9 -->
+
                 <section class="recent-countainer1">
 
                     <div>
@@ -399,7 +430,8 @@
 
                 </section>
                 <hr>
-                <!-- ******99999999999999*********** -->
+                <!-- Recent Grants 10 -->
+
                 <section class="recent-countainer1">
                     <div class="col-12 col-md-8">
                         <h4 class="mt-0">AdonisJS</h4>
@@ -426,7 +458,9 @@
 
                 </section>
                 <hr>
-                <!-- ********10101010*********** -->
+
+                <!-- Recent Grants 11 -->
+
                 <section class="recent-countainer1">
                     <div class="col-12 col-md-8">
                         <h4 class="mt-0">Fika lang</h4>
@@ -455,7 +489,9 @@
 
                 </section>
                 <hr>
-                <!-- ************************ -->
+
+                <!-- Recent Grants 12 -->
+
 
 
                 <section class="recent-countainer1">
@@ -486,7 +522,9 @@
                 </section>
 
                 <hr>
-                <!-- ******************* -->
+
+                <!-- Recent Grants 13 -->
+
                 <section class="recent-countainer1">
                     <div class="col-12 col-md-8">
                         <h4 class="mt-0">Internet Freedom Foundation</h4>
@@ -513,7 +551,8 @@
 
                 </section>
                 <hr>
-                <!-- ************************ -->
+                <!-- Recent Grants 14 -->
+
                 <section class="recent-countainer1">
                     <div class="col-12 col-md-8">
                         <h4 class="mt-0">Biswas (developer)</h4>
@@ -541,8 +580,9 @@
 
                 </section>
                 <hr>
-            </div>
 
+            </div>
+            <!-- Recent Grants section end -->
 
 
         </div>
@@ -557,13 +597,18 @@
         </div>
     </div>
 
-    <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&77777777 -->
 
+    <!-- information about website  section end -->
+
+    <!-- *************************************************** -->
+ <!-- main body section end -->
+
+
+    <!-- footer section start -->
     <div class="container5">
         <div class="foot">
             <div>
                 <img class="footer-logo" src="https://fossunited.org//files/fu.png" alt="foss-logo">
-                <!-- <img alt="Footer Logo" class="footer-logo" src="/files/logo618eee.svg"> -->
             </div>
             <div class="footer-box1">
                 <div id="foot-info">
@@ -583,7 +628,7 @@
                         </li>
                     </ul>
                 </div>
-                <!-- 00000 -->
+                <!-- **************************************-->
                 <div id="foot-info">
                     <h5 class="footer-group-label">Grants</h5>
                     <ul class="footer-ul">
@@ -595,7 +640,7 @@
                         </li>
                     </ul>
                 </div>
-                <!-- 000000 -->
+                <!-- **************************************-->
 
                 <div id="foot-info">
                     <h5 class="footer-group-label">Events</h5>
@@ -614,7 +659,7 @@
                         </li>
                     </ul>
                 </div>
-                <!-- 0000000 -->
+                <!-- *************************************-->
                 <div id="foot-info">
                     <h5 class="footer-group-label">Projects</h5>
                     <ul class="footer-ul">
@@ -632,7 +677,7 @@
                         </li>
                     </ul>
                 </div>
-                <!-- 00000000000000000 -->
+                <!--*************************************-->
 
                 <div id="foot-info">
                     <h5 class="footer-group-label">Other Important links</h5>
@@ -645,7 +690,7 @@
                         </li>
                     </ul>
                 </div>
-                <!-- 0000000000 -->
+                <!--**************************************-->
 
                 <div id="foot-info">
                     <h5 class="footer-group-label">Social Media</h5>
@@ -668,7 +713,7 @@
                     </ul>
                 </div>
 
-                <!-- 00000000 -->
+                <!--*************************************-->
 
 
             </div>
@@ -692,9 +737,10 @@
         </div>
     </div>
 
-
+    <!-- footer section end-->
 
 </body>
+<!-- Javascript file-->
 <script src="index.js"></script>
 
 </html>
